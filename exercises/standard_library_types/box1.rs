@@ -16,7 +16,6 @@
 //
 // Execute `rustlings hint box1` for hints :)
 
-
 #[derive(PartialEq, Debug)]
 pub enum List {
     Cons(i32, Box<List>),
@@ -39,7 +38,6 @@ pub fn create_empty_list() -> List {
 
 pub fn create_non_empty_list() -> List {
     Cons(1, Box::new(Cons(2, Box::new(Cons(3, Box::new(List::Nil))))))
-
 }
 
 #[cfg(test)]
